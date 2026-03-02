@@ -28,6 +28,8 @@
       #e67e22
   - Tints :
       #fdf2e9
+      #fae5d3
+      #eb984e
   - Shades :
       #cf711f
   - Accents :
@@ -46,6 +48,7 @@
 
   --- 04 ICONS
   --- 05 SHADOWS
+       box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   --- 06 BORDERS and RADIUSES
       - Default : 9px ; PS  : This is wont be change on high and low so px should be used instead of rem
       - Medium : 11px
