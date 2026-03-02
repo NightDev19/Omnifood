@@ -32,12 +32,16 @@
       #eb984e
   - Shades :
       #cf711f
+      #45260a
   - Accents :
 
   - Greys :
       #333
       #555
+      #888
+      #767676 - Lightest allowed on #fff
       #6f6f6f
+
 
 
   --- 03 IMAGES
@@ -89,7 +93,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 1.6rem;
+  column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
 .grid:not(:last-child) {
@@ -109,6 +113,9 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -183,7 +190,7 @@ body {
 .link:active::after {
   transform: scaleX(0);
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -192,9 +199,26 @@ body {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   /* Put Transition on original state */
   /* transition: background-color 0.3s ease; */
   transition: all 0.3s ease;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn-full:link,
@@ -240,6 +264,11 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .mr-sm {
