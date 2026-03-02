@@ -439,6 +439,7 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  
+  background-color: #e67e22;
 }
-.cta-img
+.cta-img {
+}
