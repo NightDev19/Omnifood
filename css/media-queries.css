@@ -1,0 +1,18 @@
+/* 
+
+PS : do not use px and rem in media queries
+0 - 600px: Phone
+600px - 900px: Tablet
+900px - 1200px: Tablet
+1200px - 1800px: Desktop
+1800px + : Big Desktop
+
+rem and em do NOT depend on html font-size in media queries, Thus 1 rem = 1em = 16px
+
+*/
+
+
+
+@media (max-width: 84em) {
+  
+}
