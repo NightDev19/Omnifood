@@ -12,7 +12,23 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-("nav-open");
+// Scroll Animation
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("a[href^='#']");
+  if (!link) return;
+
+  const href = link.getAttribute("href");
+
+  e.preventDefault();
+
+  if (href === "#") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  const target = document.querySelector(href);
+  if (target) target.scrollIntoView({ behavior: "smooth" });
+});
 
 ////////////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -33,8 +49,6 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
-
-// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
 .no-flexbox-gap .main-nav-list li:not(:last-child) {
