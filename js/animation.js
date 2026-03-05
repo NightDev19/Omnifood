@@ -13,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
     opacity: [0, 1],
     translateX: [100, 0],
     duration: 1000,
-    delay: (el, i) => i * 150,
     easing: "ease-out",
   });
 });

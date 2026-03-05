@@ -94,12 +94,17 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="./assets/hero.png"
-              alt="Woman enjoying food, meals in storage container on a table"
-              class="hero-img"
-              fetchpriority="high"
-            />
+            <picture>
+              <source srcset="./assets/hero.webp" type="image/webp" />
+              <source srcset="./assets/hero-min.png" type="image/png" />
+
+              <img
+                src="./assets/hero-min.png"
+                alt="Woman enjoying food, meals in storage container on a table"
+                class="hero-img"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
         </div>
       </section>

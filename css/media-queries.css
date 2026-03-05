@@ -133,7 +133,7 @@ rem and em do NOT depend on html font-size in media queries, Thus 1 rem = 1em = 
     pointer-events: none;
     /* Hide it from screen readers */
     visibility: hidden;
-    z-index: 9999;
+    z-index: 30;
   }
 
   .nav-open .main-nav {
@@ -162,7 +162,7 @@ rem and em do NOT depend on html font-size in media queries, Thus 1 rem = 1em = 
   }
   .btn-mobile-nav {
     display: block;
-    z-index: 1;
+    z-index: 9999;
   }
 }
 /* Below 704px Smaller Tablet */
